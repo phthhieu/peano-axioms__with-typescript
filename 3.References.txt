@@ -1,0 +1,5 @@
+https://www.math.stonybrook.edu/~scott/sch102.spr19/Peano.pdf
+https://wiki.haskell.org/Peano_numbers
+https://en.wikipedia.org/wiki/Peano_axioms
+https://github.com/microsoft/TypeScript/issues/27024#issuecomment-420227672
+https://github.com/Microsoft/TypeScript/issues/14833
