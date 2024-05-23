@@ -1,37 +1,6 @@
 type Zero = "Zero";
 type S<N> = { n: N };
 
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
 type One = S<Zero>;
 
 type Two = S<One>;
@@ -44,47 +13,8 @@ type Four = Sum<Two, Two>; // S<S<S<Zero>>>
 
 type Five = Sum<Four, One>; // S<S<S<S<Zero>>>>
 
-type Six = Sum<One, Five>; // S<S<S<S<Zero>>>>
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+type Six = Sum<One, Five>; // S<S<S<S<S<Zero>>>>>
+
 // But, how do you prove Six = One + Five?
 // => We need an equality check?
 //    Thankfully, we have an idea ⚡
@@ -95,38 +25,6 @@ type Equals<X, Y> = X extends Y ? (Y extends X ? true : false) : false;
 type Check1 = Equals<Six[], Sum<One, Five>[]>;
 type Check2 = Equals<Five, Sum<One, Five>>;
 
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 // What, it is just because Typescript,
 // nothing related to Peano axioms
 
@@ -148,26 +46,5 @@ type Check2_ = PeanoEquals<Five, Sum<One, Five>>;
 
 type Check3_ = PeanoEquals<Sum<One, Two>, Three>;
 type Check3__ = PeanoEquals<Three, Sum<One, Two>>;
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+
 // But what about product?
