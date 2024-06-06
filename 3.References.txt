@@ -3,3 +3,4 @@ https://wiki.haskell.org/Peano_numbers
 https://en.wikipedia.org/wiki/Peano_axioms
 https://github.com/microsoft/TypeScript/issues/27024#issuecomment-420227672
 https://github.com/Microsoft/TypeScript/issues/14833
+https://sketch.sh/s/yH0MJiujNSiofDWOU85loX/
